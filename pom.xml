@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.minesandmonsters</groupId>
+    <artifactId>Rifts-OT</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>kotlin.bintray.com</id>
+            <url>https://kotlin.bintray.com/kotlinx</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <!-- Zircon core package for the jvm. This is always needed. -->
+        <dependency>
+            <groupId>org.hexworks.zircon</groupId>
+            <artifactId>zircon.core-jvm</artifactId>
+            <version>2020.2.0-RELEASE</version>
+        </dependency>
+        <!-- Zircon target package. You can use either zircon.jvm.swing or zircon.jvm.libgdx -->
+        <dependency>
+            <groupId>org.hexworks.zircon</groupId>
+            <artifactId>zircon.jvm.swing</artifactId>
+            <version>2020.2.0-RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>
